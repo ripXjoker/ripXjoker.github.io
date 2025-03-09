@@ -3,62 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Khush - Personal Website</title>
+    <title>Weight Loss Program - Transform Your Body</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Syed Khush</h1>
+            <h1>Weight Loss Program</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="container">
-                <h2>Welcome to My Personal Website</h2>
-                <p>Exploring the world of web development, technology, and beyond.</p>
-                <a href="#about" class="btn">Learn More</a>
-            </div>
-        </section>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Transform Your Body, Transform Your Life</h2>
+            <p>Join our weight loss program and achieve your fitness goals with expert guidance and personalized plans.</p>
+            <a href="#plans" class="btn">Get Started</a>
+        </div>
+    </section>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>
-                    Hello! My name is <strong>Syed Khush</strong>. I am a passionate individual with a keen interest in web development and technology. 
-                    This is my personal website where you can learn more about me and get in touch.
-                </p>
-            </div>
-        </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our Program</h2>
+            <p>
+                Our weight loss program is designed to help you lose weight effectively and sustainably. 
+                With personalized meal plans, workout routines, and expert coaching, you'll achieve your goals faster than ever.
+            </p>
+        </div>
+    </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <p>
-                    If you'd like to get in touch, feel free to reach out to me via phone, email, or visit me at my address.
-                </p>
-                <ul>
-                    <li><strong>Phone:</strong> <a href="tel:+916300241881">+91 6300241881</a></li>
-                    <li><strong>Email:</strong> <a href="mailto:sami80834@gmail.com">sami80834@gmail.com</a></li>
-                    <li><strong>Address:</strong> 4-979, Pensioners Colony, Kajoor, Chittoor, Andhra Pradesh - 517002</li>
-                </ul>
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2>Subscription Plans</h2>
+            <div class="plan-cards">
+                <div class="card">
+                    <h3>Basic Plan</h3>
+                    <p class="price">$29/month</p>
+                    <ul>
+                        <li>Personalized Meal Plan</li>
+                        <li>Weekly Workout Routine</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
+                <div class="card">
+                    <h3>Premium Plan</h3>
+                    <p class="price">$49/month</p>
+                    <ul>
+                        <li>Everything in Basic</li>
+                        <li>1-on-1 Coaching</li>
+                        <li>Custom Workout Videos</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
+                <div class="card">
+                    <h3>Ultimate Plan</h3>
+                    <p class="price">$79/month</p>
+                    <ul>
+                        <li>Everything in Premium</li>
+                        <li>Daily Check-ins</li>
+                        <li>Exclusive Recipes</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Syed Khush. All rights reserved.</p>
+            <p>&copy; 2023 Weight Loss Program. All rights reserved.</p>
         </div>
     </footer>
 </body>
