@@ -22,23 +22,42 @@
             justify-content: center;
         }
         .product-card {
-            background-color: #fff;
+            background-image: url('https://www.transparenttextures.com/patterns/leather.png'); /* Leather texture background */
+            background-color: #fff; /* Fallback background color */
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 20px;
             width: 300px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
+            z-index: 1;
         }
         .product-card h3 {
             margin: 0 0 10px;
             color: #555;
+            position: relative;
+            z-index: 2;
         }
         .product-card p {
             margin: 5px 0;
             color: #777;
+            position: relative;
+            z-index: 2;
         }
         .customization {
             margin-top: 15px;
+            position: relative;
+            z-index: 2;
         }
         .customization label {
             display: block;
@@ -56,9 +75,13 @@
             color: #333;
             font-weight: bold;
             margin-top: 10px;
+            position: relative;
+            z-index: 2;
         }
         .color-options {
             margin-top: 10px;
+            position: relative;
+            z-index: 2;
         }
         .color-options label {
             display: block;
@@ -73,6 +96,8 @@
         }
         .model-options {
             margin-top: 10px;
+            position: relative;
+            z-index: 2;
         }
         .model-options label {
             display: block;
