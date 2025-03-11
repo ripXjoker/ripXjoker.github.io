@@ -17,11 +17,38 @@ app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
 
     // Configure Nodemailer transporter
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'your-email@gmail.com', // Replace with your email
-            pass: 'your-email-password'  // Replace with your email password
+    const nodemailer = require('nodemailer');
+
+// Configure Nodemailer
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'your-email@gmail.com', // Replace with your email
+        pass: 'your-email-password'  // Replace with your email password
+    }
+});
+
+// Contact Form Route
+app.post('/contact', (req, res) => {
+    const { name, email, message } = req.body;
+
+    const mailOptions = {
+        from: email,
+        to: 'your-email@gmail.com', // Replace with your email
+        subject: `New Contact Form Submission from ${name}`,
+        text: message
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email:', error);
+            res.status(500).send('Error sending message');
+        } else {
+            console.log('Email sent:', info.response);
+            res.send('Message sent successfully!');
+        }
+    });
+});
         }
     });
 
