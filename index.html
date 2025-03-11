@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight Loss Program - Transform Your Body</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -56,6 +56,7 @@
         <div class="container">
             <h2>Subscription Plans</h2>
             <div class="plan-cards">
+                <!-- Basic Plan -->
                 <div class="card">
                     <h3>Basic Plan</h3>
                     <p class="price">₹2,999/-</p>
@@ -64,8 +65,14 @@
                         <li>Basic Meal Plan</li>
                         <li>Email Support</li>
                     </ul>
-                    <a href="#" class="btn">Subscribe</a>
+                    <form action="/subscribe" method="POST">
+                        <input type="hidden" name="plan" value="Basic Plan">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
                 </div>
+
+                <!-- Premium Plan -->
                 <div class="card">
                     <h3>Premium Plan</h3>
                     <p class="price">₹6,999/-</p>
@@ -75,8 +82,14 @@
                         <li>Weekly Check-ins</li>
                         <li>Priority Support</li>
                     </ul>
-                    <a href="#" class="btn">Subscribe</a>
+                    <form action="/subscribe" method="POST">
+                        <input type="hidden" name="plan" value="Premium Plan">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
                 </div>
+
+                <!-- Pro Plan -->
                 <div class="card">
                     <h3>Pro Plan</h3>
                     <p class="price">₹9,999/-</p>
@@ -86,7 +99,11 @@
                         <li>Exclusive Workout Plans</li>
                         <li>24/7 Support</li>
                     </ul>
-                    <a href="#" class="btn">Subscribe</a>
+                    <form action="/subscribe" method="POST">
+                        <input type="hidden" name="plan" value="Pro Plan">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -96,7 +113,7 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Have questions? Reach out to us!</p>
-            <form action="#" method="POST">
+            <form action="/contact" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
