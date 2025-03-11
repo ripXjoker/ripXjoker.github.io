@@ -3,129 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weight Loss Program - Transform Your Body</title>
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Premium Leather iPhone Cases</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-card h3 {
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .product-card p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .customization {
+            margin-top: 15px;
+        }
+        .customization label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .customization select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .color-options {
+            margin-top: 10px;
+        }
+        .color-options label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .color-options select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .model-options {
+            margin-top: 10px;
+        }
+        .model-options label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .model-options select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Weight Loss Program</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#health-journey">My Journey</a></li>
-                    <li><a href="#plans">Plans</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Transform Your Body, Transform Your Life</h2>
-            <p>Join our weight loss program and achieve your fitness goals with expert guidance and personalized plans.</p>
-            <a href="#plans" class="btn">Get Started</a>
-        </div>
-    </section>
-
-    <section id="health-journey" class="health-journey">
-        <div class="container">
-            <h2>Welcome to My Health Journey</h2>
-            <p>My name is Syed Sami, and I am 27 years old from Andhra Pradesh. In 2019, I was struggling with obesity and a range of autoimmune issues. My weight ranged between 89 to 93 kg, and at 5’6” tall, my physical and mental health were severely affected.</p>
-            <h3>The Challenges I Faced:</h3>
-            <ul>
-                <li>Bleeding gums</li>
-                <li>Restless legs</li>
-                <li>Skin tags</li>
-                <li>Bad breath</li>
-                <li>Dark skin</li>
-                <li>Belly fat and side belly fat</li>
-                <li>Hairfall</li>
-                <li>Low self-esteem</li>
-                <li>An awkward face with no jawline</li>
-            </ul>
-            <p>These problems affected every part of my life, but I decided to take charge and transform myself in a completely natural way, without any prescriptions, tablets, or surgeries.</p>
-            <h3>How I Turned It Around:</h3>
-            <p>By spending hours researching online (using DuckDuckGo for precise information), I crafted a sustainable plan for myself. Over four months, I changed my diet and lifestyle, shedding excess weight and overcoming these issues. The result? A healthier, happier version of myself, and now I’m here to help you achieve the same transformation!</p>
-        </div>
-    </section>
-
-    <section id="plans" class="plans">
-        <div class="container">
-            <h2>Subscription Plans</h2>
-            <div class="plan-cards">
-                <!-- Basic Plan -->
-                <div class="card">
-                    <h3>Basic Plan</h3>
-                    <p class="price">₹2,999/-</p>
-                    <ul>
-                        <li>Diet Tips</li>
-                        <li>Basic Meal Plan</li>
-                        <li>Email Support</li>
-                    </ul>
-                    <form action="/subscribe" method="POST">
-                        <input type="hidden" name="plan" value="Basic Plan">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
-                </div>
-
-                <!-- Premium Plan -->
-                <div class="card">
-                    <h3>Premium Plan</h3>
-                    <p class="price">₹6,999/-</p>
-                    <ul>
-                        <li>Everything in Basic</li>
-                        <li>Customized Meal Plan</li>
-                        <li>Weekly Check-ins</li>
-                        <li>Priority Support</li>
-                    </ul>
-                    <form action="/subscribe" method="POST">
-                        <input type="hidden" name="plan" value="Premium Plan">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
-                </div>
-
-                <!-- Pro Plan -->
-                <div class="card">
-                    <h3>Pro Plan</h3>
-                    <p class="price">₹9,999/-</p>
-                    <ul>
-                        <li>Everything in Premium</li>
-                        <li>Daily Diet Tips</li>
-                        <li>Exclusive Workout Plans</li>
-                        <li>24/7 Support</li>
-                    </ul>
-                    <form action="/subscribe" method="POST">
-                        <input type="hidden" name="plan" value="Pro Plan">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
-                </div>
+    <h1>Premium Leather iPhone Cases</h1>
+    <div class="product-list">
+        <!-- Product Cards -->
+        <div class="product-card">
+            <h3>1-Year Aged Leather Case</h3>
+            <p>Premium leather with a smooth finish.</p>
+            <div class="model-options">
+                <label for="model1">iPhone Model:</label>
+                <select id="model1">
+                    <option value="15">iPhone 15</option>
+                    <option value="15pro">iPhone 15 Pro</option>
+                    <option value="15promax">iPhone 15 Pro Max</option>
+                    <option value="16">iPhone 16</option>
+                    <option value="16pro">iPhone 16 Pro</option>
+                    <option value="16promax">iPhone 16 Pro Max</option>
+                    <option value="16e">iPhone 16e</option>
+                </select>
             </div>
+            <div class="color-options">
+                <label for="color1">Color:</label>
+                <select id="color1">
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="tan">Tan</option>
+                    <option value="burgundy">Burgundy</option>
+                </select>
+            </div>
+            <div class="customization">
+                <label for="custom1">Customization:</label>
+                <select id="custom1">
+                    <option value="none">None</option>
+                    <option value="monogram">Monogram (+₹500)</option>
+                    <option value="embossing">Embossing (+₹700)</option>
+                    <option value="color">Color Change (+₹300)</option>
+                </select>
+            </div>
+            <p class="price">₹1,500</p>
         </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions? Reach out to us!</p>
-            <form action="/contact" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+        <div class="product-card">
+            <h3>5-Year Aged Leather Case</h3>
+            <p>Rich, matured leather with a unique patina.</p>
+            <div class="model-options">
+                <label for="model5">iPhone Model:</label>
+                <select id="model5">
+                    <option value="15">iPhone 15</option>
+                    <option value="15pro">iPhone 15 Pro</option>
+                    <option value="15promax">iPhone 15 Pro Max</option>
+                    <option value="16">iPhone 16</option>
+                    <option value="16pro">iPhone 16 Pro</option>
+                    <option value="16promax">iPhone 16 Pro Max</option>
+                    <option value="16e">iPhone 16e</option>
+                </select>
+            </div>
+            <div class="color-options">
+                <label for="color5">Color:</label>
+                <select id="color5">
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="tan">Tan</option>
+                    <option value="burgundy">Burgundy</option>
+                </select>
+            </div>
+            <div class="customization">
+                <label for="custom5">Customization:</label>
+                <select id="custom5">
+                    <option value="none">None</option>
+                    <option value="monogram">Monogram (+₹500)</option>
+                    <option value="embossing">Embossing (+₹700)</option>
+                    <option value="color">Color Change (+₹300)</option>
+                </select>
+            </div>
+            <p class="price">₹3,000</p>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Weight Loss Program. All rights reserved.</p>
+        <div class="product-card">
+            <h3>10-Year Aged Leather Case</h3>
+            <p>Vintage leather with a luxurious feel.</p>
+            <div class="model-options">
+                <label for="model10">iPhone Model:</label>
+                <select id="model10">
+                    <option value="15">iPhone 15</option>
+                    <option value="15pro">iPhone 15 Pro</option>
+                    <option value="15promax">iPhone 15 Pro Max</option>
+                    <option value="16">iPhone 16</option>
+                    <option value="16pro">iPhone 16 Pro</option>
+                    <option value="16promax">iPhone 16 Pro Max</option>
+                    <option value="16e">iPhone 16e</option>
+                </select>
+            </div>
+            <div class="color-options">
+                <label for="color10">Color:</label>
+                <select id="color10">
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="tan">Tan</option>
+                    <option value="burgundy">Burgundy</option>
+                </select>
+            </div>
+            <div class="customization">
+                <label for="custom10">Customization:</label>
+                <select id="custom10">
+                    <option value="none">None</option>
+                    <option value="monogram">Monogram (+₹500)</option>
+                    <option value="embossing">Embossing (+₹700)</option>
+                    <option value="color">Color Change (+₹300)</option>
+                </select>
+            </div>
+            <p class="price">₹5,000</p>
         </div>
-    </footer>
+
+        <div class="product-card">
+            <h3>20-Year Aged Leather Case</h3>
+            <p>Rare, antique leather with unmatched quality.</p>
+            <div class="model-options">
+                <label for="model20">iPhone Model:</label>
+                <select id="model20">
+                    <option value="15">iPhone 15</option>
+                    <option value="15pro">iPhone 15 Pro</option>
+                    <option value="15promax">iPhone 15 Pro Max</option>
+                    <option value="16">iPhone 16</option>
+                    <option value="16pro">iPhone 16 Pro</option>
+                    <option value="16promax">iPhone 16 Pro Max</option>
+                    <option value="16e">iPhone 16e</option>
+                </select>
+            </div>
+            <div class="color-options">
+                <label for="color20">Color:</label>
+                <select id="color20">
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                    <option value="tan">Tan</option>
+                    <option value="burgundy">Burgundy</option>
+                </select>
+            </div>
+            <div class="customization">
+                <label for="custom20">Customization:</label>
+                <select id="custom20">
+                    <option value="none">None</option>
+                    <option value="monogram">Monogram (+₹500)</option>
+                    <option value="embossing">Embossing (+₹700)</option>
+                    <option value="color">Color Change (+₹300)</option>
+                </select>
+            </div>
+            <p class="price">₹8,000</p>
+        </div>
+
+        <!-- Add more product cards for other ages as needed -->
+    </div>
+
+    <script>
+        // JavaScript to dynamically update prices based on customization, color, and model
+        const customSelects = document.querySelectorAll('.customization select');
+        const colorSelects = document.querySelectorAll('.color-options select');
+        const modelSelects = document.querySelectorAll('.model-options select');
+
+        customSelects.forEach(select => {
+            select.addEventListener('change', (event) => {
+                const productCard = event.target.closest('.product-card');
+                updatePrice(productCard);
+            });
+        });
+
+        colorSelects.forEach(select => {
+            select.addEventListener('change', (event) => {
+                const productCard = event.target.closest('.product-card');
+                updatePrice(productCard);
+            });
+        });
+
+        modelSelects.forEach(select => {
+            select.addEventListener('change', (event) => {
+                const productCard = event.target.closest('.product-card');
+                updatePrice(productCard);
+            });
+        });
+
+        function updatePrice(productCard) {
+            const basePrice = parseFloat(productCard.querySelector('.price').textContent.replace('₹', '').replace(',', ''));
+            const customizationSelect = productCard.querySelector('.customization select');
+            const colorSelect = productCard.querySelector('.color-options select');
+            const modelSelect = productCard.querySelector('.model-options select');
+            let customizationPrice = 0;
+
+            switch (customizationSelect.value) {
+                case 'monogram':
+                    customizationPrice = 500;
+                    break;
+                case 'embossing':
+                    customizationPrice = 700;
+                    break;
+                case 'color':
+                    customizationPrice = 300;
+                    break;
+                default:
+                    customizationPrice = 0;
+            }
+
+            // Add additional cost for specific colors (optional)
+            if (colorSelect.value === 'burgundy') {
+                customizationPrice += 200; // Example: Burgundy color costs extra
+            }
+
+            // Add additional cost for specific models (optional)
+            if (modelSelect.value.includes('pro') || modelSelect.value.includes('promax')) {
+                customizationPrice += 300; // Example: Pro models cost extra
+            }
+
+            const totalPrice = basePrice + customizationPrice;
+            productCard.querySelector('.price').textContent = `₹${totalPrice.toLocaleString()}`;
+        }
+    </script>
 </body>
 </html>
