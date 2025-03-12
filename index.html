@@ -3,352 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Leather iPhone Cases</title>
+    <title>The Probability of Death</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
             color: #333;
         }
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        h1, h2 {
+            color: #2c3e50;
         }
-        .product-card {
-            background-image: url('https://www.transparenttextures.com/patterns/leather.png'); /* Leather texture background */
-            background-color: #fff; /* Fallback background color */
-            border: 1px solid #ddd;
+        p {
+            text-align: justify;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
             border-radius: 8px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .product-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-            z-index: 1;
-        }
-        .product-card h3 {
-            margin: 0 0 10px;
-            color: #555;
-            position: relative;
-            z-index: 2;
-        }
-        .product-card p {
-            margin: 5px 0;
-            color: #777;
-            position: relative;
-            z-index: 2;
-        }
-        .customization {
-            margin-top: 15px;
-            position: relative;
-            z-index: 2;
-        }
-        .customization label {
-            display: block;
-            margin-bottom: 5px;
+        .highlight {
             font-weight: bold;
-        }
-        .customization select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .price {
-            font-size: 1.2em;
-            color: #333;
-            font-weight: bold;
-            margin-top: 10px;
-            position: relative;
-            z-index: 2;
-        }
-        .color-options {
-            margin-top: 10px;
-            position: relative;
-            z-index: 2;
-        }
-        .color-options label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .color-options select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .model-options {
-            margin-top: 10px;
-            position: relative;
-            z-index: 2;
-        }
-        .model-options label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .model-options select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .buy-button {
-            margin-top: 15px;
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1em;
-            position: relative;
-            z-index: 2;
-        }
-        .buy-button:hover {
-            background-color: #218838;
+            color: #e74c3c;
         }
     </style>
 </head>
 <body>
-    <h1>Premium Leather iPhone Cases</h1>
-    <div class="product-list">
-        <!-- Product Cards -->
-        <div class="product-card">
-            <h3>1-Year Aged Leather Case</h3>
-            <p>Premium leather with a smooth finish.</p>
-            <div class="model-options">
-                <label for="model1">iPhone Model:</label>
-                <select id="model1">
-                    <option value="15">iPhone 15</option>
-                    <option value="15pro">iPhone 15 Pro</option>
-                    <option value="15promax">iPhone 15 Pro Max</option>
-                    <option value="16">iPhone 16</option>
-                    <option value="16pro">iPhone 16 Pro</option>
-                    <option value="16promax">iPhone 16 Pro Max</option>
-                    <option value="16e">iPhone 16e</option>
-                </select>
-            </div>
-            <div class="color-options">
-                <label for="color1">Color:</label>
-                <select id="color1">
-                    <option value="black">Black</option>
-                    <option value="brown">Brown</option>
-                    <option value="tan">Tan</option>
-                    <option value="burgundy">Burgundy</option>
-                </select>
-            </div>
-            <div class="customization">
-                <label for="custom1">Customization:</label>
-                <select id="custom1">
-                    <option value="none">None</option>
-                    <option value="monogram">Monogram (+₹500)</option>
-                    <option value="embossing">Embossing (+₹700)</option>
-                    <option value="color">Color Change (+₹300)</option>
-                </select>
-            </div>
-            <p class="price">₹1,500</p>
-            <button class="buy-button" onclick="buyNow('1-Year Aged Leather Case')">Buy Now</button>
-        </div>
+    <div class="container">
+        <h1>The Probability of Death</h1>
+        <h2>Exploring the Fragility of Life and the Ripple Effects of Human Error</h2>
 
-        <div class="product-card">
-            <h3>5-Year Aged Leather Case</h3>
-            <p>Rich, matured leather with a unique patina.</p>
-            <div class="model-options">
-                <label for="model5">iPhone Model:</label>
-                <select id="model5">
-                    <option value="15">iPhone 15</option>
-                    <option value="15pro">iPhone 15 Pro</option>
-                    <option value="15promax">iPhone 15 Pro Max</option>
-                    <option value="16">iPhone 16</option>
-                    <option value="16pro">iPhone 16 Pro</option>
-                    <option value="16promax">iPhone 16 Pro Max</option>
-                    <option value="16e">iPhone 16e</option>
-                </select>
-            </div>
-            <div class="color-options">
-                <label for="color5">Color:</label>
-                <select id="color5">
-                    <option value="black">Black</option>
-                    <option value="brown">Brown</option>
-                    <option value="tan">Tan</option>
-                    <option value="burgundy">Burgundy</option>
-                </select>
-            </div>
-            <div class="customization">
-                <label for="custom5">Customization:</label>
-                <select id="custom5">
-                    <option value="none">None</option>
-                    <option value="monogram">Monogram (+₹500)</option>
-                    <option value="embossing">Embossing (+₹700)</option>
-                    <option value="color">Color Change (+₹300)</option>
-                </select>
-            </div>
-            <p class="price">₹3,000</p>
-            <button class="buy-button" onclick="buyNow('5-Year Aged Leather Case')">Buy Now</button>
-        </div>
+        <p>Human ingenuity has given rise to vast networks of roadways, railways, airways, and seaways, all designed to fulfill the needs of trade, commerce, and personal mobility. Yet, these systems, while remarkable, are not infallible. A single human error—be it reckless driving, impaired judgment due to alcohol, or a momentary lapse in attention—can cascade into catastrophic consequences, altering the lives of thousands in profound and unpredictable ways.</p>
 
-        <div class="product-card">
-            <h3>10-Year Aged Leather Case</h3>
-            <p>Vintage leather with a luxurious feel.</p>
-            <div class="model-options">
-                <label for="model10">iPhone Model:</label>
-                <select id="model10">
-                    <option value="15">iPhone 15</option>
-                    <option value="15pro">iPhone 15 Pro</option>
-                    <option value="15promax">iPhone 15 Pro Max</option>
-                    <option value="16">iPhone 16</option>
-                    <option value="16pro">iPhone 16 Pro</option>
-                    <option value="16promax">iPhone 16 Pro Max</option>
-                    <option value="16e">iPhone 16e</option>
-                </select>
-            </div>
-            <div class="color-options">
-                <label for="color10">Color:</label>
-                <select id="color10">
-                    <option value="black">Black</option>
-                    <option value="brown">Brown</option>
-                    <option value="tan">Tan</option>
-                    <option value="burgundy">Burgundy</option>
-                </select>
-            </div>
-            <div class="customization">
-                <label for="custom10">Customization:</label>
-                <select id="custom10">
-                    <option value="none">None</option>
-                    <option value="monogram">Monogram (+₹500)</option>
-                    <option value="embossing">Embossing (+₹700)</option>
-                    <option value="color">Color Change (+₹300)</option>
-                </select>
-            </div>
-            <p class="price">₹5,000</p>
-            <button class="buy-button" onclick="buyNow('10-Year Aged Leather Case')">Buy Now</button>
-        </div>
+        <p>Consider the tragic scenario of a fatal accident caused by negligent driving. The victim, perhaps a father of two young children, leaves behind a family now burdened with emotional and financial instability. The mother, if steadfast and loyal, may strive to provide for her children, ensuring their education and well-being. However, if she falters, the introduction of another figure into her life could either bring stability or further chaos. The children, grappling with their loss, may develop complex philosophical views on life, death, and the nature of their mother's choices. This single incident, seemingly isolated, reverberates through countless lives, exposing the vulnerabilities inherent in our existence.</p>
 
-        <div class="product-card">
-            <h3>20-Year Aged Leather Case</h3>
-            <p>Rare, antique leather with unmatched quality.</p>
-            <div class="model-options">
-                <label for="model20">iPhone Model:</label>
-                <select id="model20">
-                    <option value="15">iPhone 15</option>
-                    <option value="15pro">iPhone 15 Pro</option>
-                    <option value="15promax">iPhone 15 Pro Max</option>
-                    <option value="16">iPhone 16</option>
-                    <option value="16pro">iPhone 16 Pro</option>
-                    <option value="16promax">iPhone 16 Pro Max</option>
-                    <option value="16e">iPhone 16e</option>
-                </select>
-            </div>
-            <div class="color-options">
-                <label for="color20">Color:</label>
-                <select id="color20">
-                    <option value="black">Black</option>
-                    <option value="brown">Brown</option>
-                    <option value="tan">Tan</option>
-                    <option value="burgundy">Burgundy</option>
-                </select>
-            </div>
-            <div class="customization">
-                <label for="custom20">Customization:</label>
-                <select id="custom20">
-                    <option value="none">None</option>
-                    <option value="monogram">Monogram (+₹500)</option>
-                    <option value="embossing">Embossing (+₹700)</option>
-                    <option value="color">Color Change (+₹300)</option>
-                </select>
-            </div>
-            <p class="price">₹8,000</p>
-            <button class="buy-button" onclick="buyNow('20-Year Aged Leather Case')">Buy Now</button>
-        </div>
+        <p>What if the victim had no familial ties, living a life devoid of purpose or direction? Their sudden demise would still ripple through society, albeit in less obvious ways. The unpredictability of life is such that even the safest of environments—such as the <span class="highlight">Volvo XC90</span>, renowned for its safety features—cannot guarantee immunity from tragedy. Life, much like the plot of the film <span class="highlight">Final Destination</span>, is fraught with chaos and unpredictability.</p>
 
-        <!-- Add more product cards for other ages as needed -->
+        <p>This chaotic and often insane world presents us with an infinite number of probabilities—both for death and for life. The present moment, therefore, becomes paramount. Life is a tapestry of unpredictability and misery, and none can foresee when death will arrive to claim its due. To live fully, with intention and decision-making prowess, is not merely a choice but a necessity. The fragility of life underscores the importance of cherishing each moment, for it is all we truly possess.</p>
+
+        <p>In conclusion, the probability of death is an ever-present reality, shaped by countless variables and human actions. A single error can unravel the lives of thousands, leaving behind a legacy of vulnerability and uncertainty. As we navigate this chaotic world, let us strive to live with purpose, mindfulness, and an unwavering appreciation for the present moment.</p>
+
+        <p><em>"I think, therefore I am."</em> — René Descartes</p>
     </div>
-
-    <script>
-        // JavaScript to dynamically update prices based on customization, color, and model
-        const customSelects = document.querySelectorAll('.customization select');
-        const colorSelects = document.querySelectorAll('.color-options select');
-        const modelSelects = document.querySelectorAll('.model-options select');
-
-        customSelects.forEach(select => {
-            select.addEventListener('change', (event) => {
-                const productCard = event.target.closest('.product-card');
-                updatePrice(productCard);
-            });
-        });
-
-        colorSelects.forEach(select => {
-            select.addEventListener('change', (event) => {
-                const productCard = event.target.closest('.product-card');
-                updatePrice(productCard);
-            });
-        });
-
-        modelSelects.forEach(select => {
-            select.addEventListener('change', (event) => {
-                const productCard = event.target.closest('.product-card');
-                updatePrice(productCard);
-            });
-        });
-
-        function updatePrice(productCard) {
-            const basePrice = parseFloat(productCard.querySelector('.price').textContent.replace('₹', '').replace(',', ''));
-            const customizationSelect = productCard.querySelector('.customization select');
-            const colorSelect = productCard.querySelector('.color-options select');
-            const modelSelect = productCard.querySelector('.model-options select');
-            let customizationPrice = 0;
-
-            switch (customizationSelect.value) {
-                case 'monogram':
-                    customizationPrice = 500;
-                    break;
-                case 'embossing':
-                    customizationPrice = 700;
-                    break;
-                case 'color':
-                    customizationPrice = 300;
-                    break;
-                default:
-                    customizationPrice = 0;
-            }
-
-            // Add additional cost for specific colors (optional)
-            if (colorSelect.value === 'burgundy') {
-                customizationPrice += 200; // Example: Burgundy color costs extra
-            }
-
-            // Add additional cost for specific models (optional)
-            if (modelSelect.value.includes('pro') || modelSelect.value.includes('promax')) {
-                customizationPrice += 300; // Example: Pro models cost extra
-            }
-
-            const totalPrice = basePrice + customizationPrice;
-            productCard.querySelector('.price').textContent = `₹${totalPrice.toLocaleString()}`;
-        }
-
-        // Function to handle Buy Now button click
-        function buyNow(productName) {
-            alert(`You have successfully purchased the ${productName}!`);
-        }
-    </script>
 </body>
 </html>
