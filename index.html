@@ -3,99 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyedKhush.AI - Your Personal Chatbot</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-        .chat-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 20px;
-        }
-        .header {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .chat-box {
-            height: 400px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            overflow-y: auto;
-            margin-bottom: 20px;
-        }
-        .input-area {
-            display: flex;
-            gap: 10px;
-        }
-        #user-input {
-            flex-grow: 1;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>SyedKhush.AI - Smart Chatbot</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <div class="chat-container">
         <div class="header">
-            <h1>Welcome to SyedKhush.AI</h1>
-            <p>Your personal AI assistant</p>
+            <h1>SyedKhush.AI</h1>
+            <p>Your Smart AI Assistant</p>
         </div>
-        <div class="chat-box" id="chat-box">
-            <!-- Chat messages will appear here -->
-        </div>
+        <div class="chat-box" id="chat-box"></div>
         <div class="input-area">
             <input type="text" id="user-input" placeholder="Type your message...">
             <button onclick="sendMessage()">Send</button>
         </div>
     </div>
-
-    <script>
-        function sendMessage() {
-            const input = document.getElementById('user-input');
-            const chatBox = document.getElementById('chat-box');
-            const message = input.value.trim();
-
-            if (message) {
-                // Display user message
-                chatBox.innerHTML += `<p><strong>You:</strong> ${message}</p>`;
-                
-                // Here you would typically send the message to your AI backend
-                // For now, we'll just echo it back
-                chatBox.innerHTML += `<p><strong>SyedKhush.AI:</strong> Hello! You said: ${message}</p>`;
-                
-                // Scroll to bottom
-                chatBox.scrollTop = chatBox.scrollHeight;
-                input.value = ''; // Clear input
-            }
-        }
-
-        // Allow sending message with Enter key
-        document.getElementById('user-input').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-    </script>
+    <script src="static/script.js"></script>
 </body>
 </html>
